@@ -1,11 +1,13 @@
+import React from "react";
 import "./App.css";
+import Weather from "./Weather.js";
 
 function App() {
   return (
     <div className="App ">
       <div className="container">
-        <h1>Learn React </h1>
-        <button className="btn btn-primary">hello</button>
+        <Weather />
+
         <footer>
           <a
             href="https://github.com/ArchanaManju/weather-app-react"
