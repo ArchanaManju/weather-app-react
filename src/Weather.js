@@ -4,6 +4,15 @@ import "./Weather.css";
 export default function Weather() {
   return (
     <div className="weather">
+      <form>
+        <input
+          type="search"
+          placeholder="Enter a city... "
+          className="'form-control"
+        />
+
+        <input type="submit" value="search" className="btn-primary" />
+      </form>
       <div className="row">
         <div className="col-6">
           <img
