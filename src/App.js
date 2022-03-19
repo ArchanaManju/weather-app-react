@@ -9,6 +9,15 @@ function App() {
         <Weather defaultCity="London" />
 
         <footer>
+          This Project was coded By{" "}
+          <a
+            href="https://github.com/ArchanaManju/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            ArchanaManju
+          </a>{" "}
+          and is a{" "}
           <a
             href="https://github.com/ArchanaManju/weather-app-react"
             target="_blank"

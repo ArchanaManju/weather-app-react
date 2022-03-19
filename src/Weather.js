@@ -8,13 +8,15 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
     console.log(response);
+    console.log("date", response.data.dt);
+
     setWeatherdata({
       temp: response.data.main.temp,
       precipitation: response.data.main.temp,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
-      icon: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       ready: true,
       city: response.data.name,
@@ -44,7 +46,7 @@ export default function Weather(props) {
             onChange={handleCityChange}
           />
 
-          <input type="submit" value="search" className="btn-primary" />
+          <input type="submit" value="search" className="btn-secondary" />
         </form>
         <WeatherInfo data={weatherData} />
       </div>

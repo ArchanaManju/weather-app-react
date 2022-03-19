@@ -3,4 +3,43 @@
   margin-top: 8px;
   background-color: black;
   color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.weather li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+
+.weather .temperature {
+  font-weight: bold;
+  font-size: 64px;
+  color: antiquewhite;
+  font-weight: 400;
+  line-height: 64px;
+  padding-left: 8px;
+}
+
+.weather .unit {
+  font-weight: bold;
+  font-size: 16px;
+  color: antiquewhite;
+  font-weight: 400;
+  line-height: 1px;
+  padding-left: 8px;
+  top: -34px;
+}
+
+.weather .city {
+  color: antiquewhite;
+  font-size: 36px;
+}
+
+.weather .canvas {
+  height: 64px;
+  width: 64px;
+  margin-right: 10px;
+  display: inline-block;
 }
