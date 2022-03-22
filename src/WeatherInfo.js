@@ -4,7 +4,6 @@ import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature.js";
 
 export default function WeatherInfo(props) {
-  console.log("date", props.data.date);
   return (
     <div className="weatherInfo">
       <div className="row mt-3">

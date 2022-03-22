@@ -20,7 +20,7 @@ export default function Formatdate(props) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  console.log({ day }, { hours }, { minutes });
+
   return (
     <div>
       {day} {hours}:{minutes}

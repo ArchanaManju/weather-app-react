@@ -8,9 +8,6 @@ export default function Weather(props) {
   const [weatherData, setWeatherdata] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
-    console.log(response);
-    console.log("date", response.data.dt);
-
     setWeatherdata({
       temp: response.data.main.temp,
       precipitation: response.data.main.temp,
@@ -50,6 +47,7 @@ export default function Weather(props) {
 
           <input type="submit" value="search" className="btn-secondary" />
         </form>
+
         <WeatherInfo data={weatherData} />
         <WeatherDataForecast coordinates={weatherData.coordinates} />
       </div>
